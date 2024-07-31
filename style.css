@@ -57,7 +57,6 @@ header {
   z-index: 10;
 }
 
-section,
 header {
   max-width: 1440px;
   background-color: var(--background-bold);
@@ -67,6 +66,12 @@ header {
   top: 0;
 }
 
+.hero {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: var(--background-bold);
+}
+
 .header__content,
 .hero__content {
   display: flex;
@@ -74,7 +79,11 @@ header {
   max-width: 1170px;
   margin: 0 auto;
   align-items: center;
-  margin-bottom: 50px;
+}
+
+.hero__content {
+  padding-bottom: 100px;
+  padding-top: 60px;
 }
 
 .header__content--logo img {
@@ -173,4 +182,98 @@ header {
 
 .hero__content--right {
   display: flex;
+}
+
+.services {
+  width: 1170px;
+  max-width: calc(100% - 24px);
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.services__heading p {
+  color: #575f66;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 30px;
+  text-align: center;
+  padding: 20px 0;
+  width: 468px;
+  margin: 0 auto;
+}
+
+.services__content {
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.services__content-img {
+  width: 570px;
+  height: 570px;
+  border-radius: 12px;
+}
+
+.services__content--right {
+  width: 470px;
+}
+
+.cover {
+  width: 470px;
+  height: 128px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.services__content--right-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.services__content--right-first-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #eff6fd;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.services__content--right-first-text h6 {
+  color: #10375c;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 22.68px;
+}
+
+.services__content--right-first-text p {
+  color: #575f66;
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 28px;
+}
+
+.services__content--right-btn {
+  margin-top: 50px;
+}
+
+.cover:hover {
+  position: relative;
+  box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+}
+
+.cover:hover .services__content--right-first-icon {
+  background-color: var(--background-light);
+  color: #fff;
+}
+
+.services__content--right-first-text h6 {
+  padding-bottom: 6px;
 }
