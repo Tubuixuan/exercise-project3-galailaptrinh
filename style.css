@@ -369,3 +369,57 @@ header {
   font-size: 1.6rem;
   line-height: 28px;
 }
+
+.about {
+  max-width: 1170px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0 200px 0;
+}
+
+.about__left {
+  width: 570px;
+  max-height: 491px;
+  position: relative;
+}
+
+.about__left--first {
+  max-width: 512px;
+  max-height: 370px;
+}
+
+.about__left--second {
+  max-width: 332px;
+  max-height: 370px;
+  position: absolute;
+  left: 230px;
+  top: 100px;
+}
+
+.about__right {
+  max-width: 470px;
+}
+
+.about__right h2 {
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.about__right p {
+  color: #575f66;
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+.btn-about {
+  border: none;
+  /* margin-bottom: 30px; */
+}
+
+.btn-about:hover {
+  outline: 3px solid var(--background-light);
+}
